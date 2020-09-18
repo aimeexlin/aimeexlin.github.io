@@ -1,0 +1,25 @@
+*{
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    background-color: lightskyblue;
+}
+h1 {
+    font-size: 400%;
+    font-family: 'blue_eyes_-_personal_useRg', sans-serif;
+    letter-spacing: 0.25em;
+}
+img {
+    height: 25%;
+    width: 25%;
+    border-radius: 50%;
+    opacity: 90%;
+}
+#socials {
+    font-size: 200%;
+    letter-spacing: 0.25em;
+    padding: 2%;
+}
+i:hover {
+    color: lightgray;
+}
