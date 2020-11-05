@@ -10,8 +10,8 @@ h1 {
     letter-spacing: 0.25em;
 }
 img {
-    height: 25%;
-    width: 25%;
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
     opacity: 90%;
 }
@@ -23,3 +23,38 @@ img {
 i:hover {
     color: lightgray;
 }
+.container {
+    position: relative;
+    height: 100%;
+    width: 25%;
+    margin: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+}
+.container:hover .overlay {
+    opacity: 1;
+}
+  .text {
+    color: lightskyblue;
+    background-color: white;
+    font-size: 200%;
+    font-family: 'blue_eyes_-_personal_useRg', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
