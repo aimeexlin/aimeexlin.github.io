@@ -37,8 +37,8 @@ a:visited i:visited {
     height: 25vw;
     width: 25vw;
     float: left;
-    margin: 0vw 0vw 0vw 15vw;
-    padding: 0vw 5vw 0vw 0vw;
+    margin-left: 15vw;
+    padding-right: 5vw;
     border-right: 0.2em solid white;
 }
 #me {
@@ -90,6 +90,7 @@ i:hover {
 @media only screen and (max-width: 640px) {
     * {
         font-size: 5vw;
+        overflow-y: scroll;
     }
     h1 {
         font-size: 14vw;
