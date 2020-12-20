@@ -3,7 +3,8 @@
     <head>
         <title>-ˏˋ aimee lin ˊˎ-</title>
         <!--main stylesheet--><link rel="stylesheet" href="style.css">
-        <!--font stylesheet--><link rel="stylesheet" href="webfontkit/stylesheet.css"> 
+        <!--font stylesheet--><link rel="stylesheet" href="webfontkit/stylesheet.css">
+        <!--main script--><script src="script.js"></script>
         <!--font awesome--><script src="https://kit.fontawesome.com/fbc70a020c.js" crossorigin="anonymous"></script> 
         <!--favicon--><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
                       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -15,12 +16,42 @@
         <header>
             <h1>(aimee lin)</h1>
         </header>
-        <div class="container">
-            <img src ="rpm.gif">
-            <div class="overlay">
-                <div class="text">
-                    welcome!<br><br>
-                    currently under construction...
+        <div id="container">
+            <div id="gif">
+                <img id="me" src="rpm.gif">
+            </div>
+            <div id="right">
+                <div id="nav">
+                    <button id="abouttext" onmouseover="abouthover()" onmouseout="aboutout()">about</button>
+                    <button id="projectstext" onmouseover="projectshover()" onmouseout="projectsout()">projects</button>
+                    <button id="featuredtext" onmouseover="featuredhover()" onmouseout="featuredout()">featured</button>
+                </div>
+                <div class="dynamic" id="default">
+                    Welcome to my website! Hover on the headings to read each section :)
+                </div>
+                <div class="dynamic" id="about" onmouseover="abouthover()" onmouseout="aboutout()">
+                    My name is Aimee and I'm a third-year biomedical engineering student at the University of Auckland.
+                    I'm interested in healthcare technology, space exploration, and STEM education.
+                    In my spare time you'll find me streaming TV shows, playing or watching tennis, and making Instagram filters.
+                    <br><br>📍 Auckland, New Zealand
+                </div>
+                <div class="dynamic" id="projects" onmouseover="projectshover()" onmouseout="projectsout()">
+                    <a href="https://fb.me/ytechnz" target="_blank_"><b class="title">YTech NZ</b></a> is a youth organisation that runs tech events for youth in New Zealand to show that tech is for everyone.
+                    <br><br><a href="https://redpocketmagazine.ca" target="_blank_"><b class="title">Red Pocket Magazine</b></a> is an international magazine that seeks to publish writing and art by youth of the Asian diaspora.
+                    <br><br><a href="https://joinlaunchpad.com/#/projects/828/wildfires-tracking-prevention-and-containment" target="_blank_"><b class="title">Firebusters</b></a> was a wildfire prevention project designed for the New York Academy of Sciences' Fall 2018 Wildfires challenge.
+                    <br><br>⤵ More projects on GitHub
+                </div>
+                <div class="dynamic" id="featured" onmouseover="featuredhover()" onmouseout="featuredout()">
+                    <b>YTech NZ</b>
+                    <br><a href="https://www.youthnfphub.org/blog-1/ytech-nz" target="_blank_">Youth Not-For-Profit Hub</a>
+                    <br><a href="https://gazette.education.govt.nz/articles/chatbots-and-robots-students-meet-real-world-ai-up-close" target="_blank_">Education Gazette (on AI event 2019)</a>
+                    <br><a href="http://www2.cio.co.nz/article/665211/forum-aims-reach-teach-kiwi-youth-about-cybersecurity/CreateOps" target="_blank_">CIO Magazine (on Cybersecurity event 2019)</a>
+                    <br><a href="https://www.scoop.co.nz/stories/BU1906/S00352/winners-announced-for-2019-cio-awards.htm" target="_blank">Scoop (on CIO Awards 2019)</a>
+                    <br><br><b>Firebusters</b>
+                    <br><a href="https://blogs.scientificamerican.com/observations/who-you-gonna-call-the-firebusters/" target="_blank_">Scientific American</a>
+                    <br><a href="//www.nyas.org/news-articles/academy-news/students-offer-innovative-solutions-to-mitigate-wildfires/" target="_blank_">New York Academy of Sciences Magazine</a>
+                    <br><br><b>Better Breathing Art Competition</b>
+                    <br><a href="https://www.asthmafoundation.org.nz/news-events/2018/2018-better-breathing-art-competition" target="_blank_">Asthma Foundation</a>
                 </div>
             </div>
         </div>
