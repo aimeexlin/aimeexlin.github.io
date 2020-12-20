@@ -89,14 +89,14 @@ i:hover {
 }
 @media only screen and (max-width: 640px) {
     * {
-        font-size: 5vw;
+        font-size: 4vw;
         overflow-y: scroll;
     }
     h1 {
-        font-size: 14vw;
+        font-size: 12vw;
     }
     b {
-        font-size: 7vw;
+        font-size: 6vw;
     }
     #gif {
         float: none;
@@ -114,20 +114,19 @@ i:hover {
     }
     #nav {
         width: 90vw;
-        text-align: center;
         padding-top: 10vw;
     }
     button {
-        font-size: 7vw;
-        width: 28vw;
+        font-size: 6vw;
+        width: 24vw;
         border: 2px solid white;
         border-radius: 10px;
     }
     .dynamic {
         height: 80vw;
         width: 80vw;
-        margin-top: 7vw;
-        margin-bottom: 7vw;
+        margin-top: 6vw;
+        margin-bottom: 6vw;
         margin-left: auto;
         margin-right: auto;
         border: 2px solid white;
@@ -144,6 +143,6 @@ i:hover {
         display: none;
     }
     i {
-        font-size: 7vw;
+        font-size: 6vw;
     }
 }
