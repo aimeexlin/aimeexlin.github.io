@@ -1,68 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>-ˏˋ aimee lin ˊˎ-</title>
-        <!--main stylesheet--><link rel="stylesheet" href="style.css">
-        <!--font stylesheet--><link rel="stylesheet" href="webfontkit/stylesheet.css">
-        <!--main script--><script src="script.js"></script>
-        <!--font awesome--><script src="https://kit.fontawesome.com/fbc70a020c.js" crossorigin="anonymous"></script> 
-        <!--favicon--><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-                      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-                      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-                      <link rel="manifest" href="/site.webmanifest">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header>
-            <h1>(aimee lin)</h1>
-        </header>
-        <div id="container">
-            <div id="gif">
-                <img id="me" src="rpm.gif">
-            </div>
-            <div id="right">
-                <div id="nav">
-                    <button id="abouttext" onmouseover="abouthover()" onmouseout="aboutout()">about</button>
-                    <button id="projectstext" onmouseover="projectshover()" onmouseout="projectsout()">projects</button>
-                    <button id="featuredtext" onmouseover="featuredhover()" onmouseout="featuredout()">featured</button>
-                </div>
-                <div class="dynamic" id="default">
-                    Welcome to my website! Hover on the headings to read each section :)
-                </div>
-                <div class="dynamic" id="about" onmouseover="abouthover()" onmouseout="aboutout()">
-                    My name is Aimee and I'm a third-year biomedical engineering student at the University of Auckland.
-                    I'm interested in healthcare technology, space exploration, and STEM education.
-                    In my spare time you'll find me streaming TV shows, playing or watching tennis, and making Instagram filters.
-                    <br><br>📍 Auckland, New Zealand
-                </div>
-                <div class="dynamic" id="projects" onmouseover="projectshover()" onmouseout="projectsout()">
-                    <a href="https://fb.me/ytechnz" target="_blank_"><b class="title">YTech NZ</b></a> is a youth organisation that runs tech events for youth in New Zealand to show that tech is for everyone.
-                    <br><br><a href="https://redpocketmagazine.ca" target="_blank_"><b class="title">Red Pocket Magazine</b></a> is an international magazine that seeks to publish writing and art by youth of the Asian diaspora.
-                    <br><br><a href="https://joinlaunchpad.com/#/projects/828/wildfires-tracking-prevention-and-containment" target="_blank_"><b class="title">Firebusters</b></a> was a wildfire prevention project designed for the New York Academy of Sciences' Fall 2018 Wildfires challenge.
-                    <br><br>⤵ More projects on GitHub
-                </div>
-                <div class="dynamic" id="featured" onmouseover="featuredhover()" onmouseout="featuredout()">
-                    <b>YTech NZ</b>
-                    <br><a href="https://www.youthnfphub.org/blog-1/ytech-nz" target="_blank_">Youth Not-For-Profit Hub</a>
-                    <br><a href="https://gazette.education.govt.nz/articles/chatbots-and-robots-students-meet-real-world-ai-up-close" target="_blank_">Education Gazette (on AI event 2019)</a>
-                    <br><a href="http://www2.cio.co.nz/article/665211/forum-aims-reach-teach-kiwi-youth-about-cybersecurity/CreateOps" target="_blank_">CIO Magazine (on Cybersecurity event 2019)</a>
-                    <br><a href="https://www.scoop.co.nz/stories/BU1906/S00352/winners-announced-for-2019-cio-awards.htm" target="_blank">Scoop (on CIO Awards 2019)</a>
-                    <br><br><b>Firebusters</b>
-                    <br><a href="https://blogs.scientificamerican.com/observations/who-you-gonna-call-the-firebusters/" target="_blank_">Scientific American</a>
-                    <br><a href="//www.nyas.org/news-articles/academy-news/students-offer-innovative-solutions-to-mitigate-wildfires/" target="_blank_">New York Academy of Sciences Magazine</a>
-                    <br><br><b>Better Breathing Art Competition</b>
-                    <br><a href="https://www.asthmafoundation.org.nz/news-events/2018/2018-better-breathing-art-competition" target="_blank_">Asthma Foundation</a>
-                </div>
-            </div>
+
+<head>
+    <title>aimee lin</title>
+    <!--stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--script-->
+    <script src="script.js"></script>
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/fbc70a020c.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1>aimee lin</h1>
+    </header>
+    <nav>
+        <span class="nav" onclick="home()">HOME</span>
+        <span class="nav" onclick="projects()">PROJECTS</span>
+        <span class="nav">IDK</span>
+        <!--link to external site eg. medium???-->
+    </nav>
+    <div id="container">
+        <div id="home">
+            <img src="memoji.png" id="me_mobile" width="50%">
+            <table>
+                <tr>
+                    <td id="text">
+                        Welcome to my website! My name is Aimee and I'm a third-year biomedical engineering student at
+                        the
+                        University of Auckland. I'm interested in healthcare technology, space exploration, and STEM
+                        education.
+                        <p><i class="fas fa-map-marker-alt"></i> Auckland, New Zealand
+                    </td>
+                    <td>
+                        <img src="memoji.png" id="me" width="100%">
+                    </td>
+                </tr>
+            </table>
         </div>
-        <div id="socials">
+        <div id="projects" style="display:none;">
+            <div class="tiles">
+                <div class="tile">
+                    <b>Guess The Song</b>
+                    <p>An Instagram filter game created for
+                    <a href="http://redpocketmagazine.ca" target="_blank_">Red Pocket Magazine</a> using Spark AR Studio.
+                    Currently has over 255k opens on Instagram and over 1.7M views on TikTok.
+                    <p><a href="https://www.facebook.com/sparkarhub/effect/view/305119360465312/" target="_blank_"><button>see more</button></a>
+                </div>
+                <div class="tile">
+                    <b>Firebusters</b>
+                    <p>A solution to mitigate power-line caused fires for the New York Academy of Sciences' Fall 2018 Wildfires Challenge.
+                    Presented at 2019 Global STEM Alliance Summit and featured in
+                    <a href="https://blogs.scientificamerican.com/observations/who-you-gonna-call-the-firebusters/" target="_blank_">Scientific American</a>.
+                    <p><a href="https://joinlaunchpad.com/#/projects/828/wildfires-tracking-prevention-and-containment" target="_blank_"><button>see more</button></a>
+                </div>
+                <div class="tile">
+                    <b>Another project</b>
+                    <p> Description of the project.
+                    <p><a href="" target="_blank_"><button>see more</button></a>
+                </div>
+            </div>
+            <p id="projecttext">← swipe →
+        </div>
+        <footer>
             <a href="https://www.facebook.com/aimeexlin" target="_blank_"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.linkedin.com/in/aimeexlin" target="_blank_"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://github.com/aimeexlin" target="_blank_"><i class="fab fa-github"></i></a>
             <a href="mailto:aimeelin2014@gmail.com" target="_blank_"><i class="far fa-envelope"></i></i></a>
-        </div>
-        <footer>
-            made by aimee lin &copy; 2020
+            <p>
+                made by aimee lin &copy; 2021
         </footer>
-    </body>
+    </div>
+</body>
+
 </html>
