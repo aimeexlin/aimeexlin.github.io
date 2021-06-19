@@ -61,13 +61,6 @@ nav {
     position: relative;
     margin: auto;
 }
-#me_mobile {
-    display: none;
-}
-#text {
-    text-align: justify;
-    width: 60%;
-}
 footer{
     padding-top: 2%;
     bottom: 0;
@@ -100,6 +93,11 @@ button {
     border-radius: 0.2em;
     border: solid 0.2em #364559;
 }
+#me {
+    width: 30%;
+    margin: auto;
+    border-radius: 50%;
+}
 @media only screen and (max-width: 640px) {
     * {
         font-size: 4vw;
@@ -115,12 +113,7 @@ button {
         margin-left: 15%;
     }
     #me {
-        display: none;
-    }
-    #me_mobile {
-        display: block;
-        margin: auto;
-        padding-bottom: 6vw;
+        width: 50%;
     }
     #text {
         width: 100%;
