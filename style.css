@@ -206,6 +206,6 @@ footer {
         font-size: 3vw;
     }
     .text {
-        backdrop-fiter: brightness(25%) blur(1px);
+        backdrop-filter: brightness(50%) blur(1px);
     }
 }
