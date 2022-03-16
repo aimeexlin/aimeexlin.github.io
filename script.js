@@ -1,8 +1,6 @@
-function home() {
-    document.getElementById("home").style.display = "block";
-    document.getElementById("projects").style.display = "none";
+function showDetails(name) {
+    document.getElementById(name).style.display="block";
 }
-function projects() {
-    document.getElementById("home").style.display = "none";
-    document.getElementById("projects").style.display = "block";
+function hideDetails(name) {
+    document.getElementById(name).style.display="none";
 }
