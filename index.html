@@ -43,8 +43,8 @@
 
 <body>
     <header>
-        <div id="gif" class="heading vis">
-            <img src="media/rpm.gif" id="me">
+        <div id="pic" class="heading vis">
+            <img src="media/memoji_white.png" id="me">
         </div>
         <div id="central" class="heading">
             <div id="name" class="vis">
@@ -52,7 +52,7 @@
             </div>
             <div id="description" class="vis">
                 Hey there, my name is Aimee and I'm a final year biomedical engineering student at The University of
-                Auckland.
+                Auckland. Welcome to my portfolio, featuring university projects and more.
             </div>
         </div>
         <div id="contact" class="heading vis">
@@ -66,6 +66,60 @@
     </header>
     <div id="container">
         <div class="tile year vis">
+            2022
+        </div>
+        <div class="tile click vis" onmouseover="showDetails('11')" onmouseout="hideDetails('11')"
+            style="background-image: url(media/11.png)">
+            <div class="text" id="p11">
+                <p class="title">TECHNOLOGY TO ADVANCE TREATMENT OF CHILDREN WITH MOVEMENT DISORDERS
+                </p>
+                <p class="details" id="11">
+                    Currently working on this project for my final-year honours project. This is a paired project where
+                    my part involves
+                    using Python and OpenSim to compare scaled and subject-specific models of the paediatric lower limb
+                    in typically
+                    developed children and children with cerebral palsy.
+
+                </p>
+            </div>
+        </div>
+        <div class="tile click vis" onmouseover="showDetails('10')" onmouseout="hideDetails('10')"
+            style="background-image: url(media/10.png)">
+            <div class="text" id="p10">
+                <p class="title">HUMAN ACTIVITY RECOGNITION
+                </p>
+                <p class="details" id="10">
+                    Currently working on this project for ENGSCI 712, a signal processing course taken as an elective. I
+                    recorded linear
+                    acceleration data from my phone while walking and running and am using tsfresh and scikit-learn in
+                    Python to extract
+                    relevant features to create a time-series classification model.
+
+                </p>
+            </div>
+        </div>
+        <div class="tile click vis" onmouseover="showDetails('9')" onmouseout="hideDetails('9')"
+            style="background-image: url(media/9.png)">
+            <div class="text" id="p9">
+                <p class="title">JUICY MOUTH: A SOLUTION FOR XEROSTOMIA
+                </p>
+                <p class="details" id="9">
+                    This project was completed for BIOMENG 791, a fourth-year medical device design course. I worked
+                    with four other fourth-year biomedical engineering students to design a device that addresses a
+                    problem outlined by our client, Prof. Mark McKeage, a medical oncologist. Xerostomia, or dry mouth,
+                    is a common side
+                    effect of head and neck cancer, so we designed a solution to sustain saliva substitute delivery. The
+                    design was a capsule containing medication attached to the user’s teeth with brackets inspired by
+                    orthodontic clasps. The project also considered ethical issues, social impact, safety risks, and
+                    international regulations. I contributed to the research of medications and delivery mechanisms, CAD
+                    of the capsule and its packaging on Autodesk Fusion 360, planning a suite of design verification
+                    tests, performing a computational stress analysis of the capsule, and report writing. Prototyping
+                    was not required for the completion of this project.
+
+                </p>
+            </div>
+        </div>
+        <div class="tile year vis">
             2021
         </div>
         <div class="tile click vis" onmouseover="showDetails('8')" onmouseout="hideDetails('8')"
@@ -75,20 +129,19 @@
                 </p>
                 <p class="details" id="8">
                     This project was completed for EXERSCI 309, a practicum project in exercise science taken as an
-                    elective.
-                    I was supervised by Dr Yanxin Zhang from the Department of Exercise Science.
-                    I investigated whether performing joint mobilisation tasks such as shoulder, hip, and pelvic joint
-                    mobilisation
-                    increase the risk for work-related musculoskeletal disorders (WMSDs) in physical therapists using
-                    motion capture data collected from a study conducted in China.
-                    Although I didn’t collect the data used in the project, prior to Covid-19 lockdown during the
-                    semester I learnt how to use the Azure Kinect system to capture motion data in the biomechanics lab.
-                    I carried out biomechanical and ergonomic analyses using an existing software to find RULA and REBA
-                    angles, low back compression forces, and strength capabilities in the joints at the most awkward
-                    posture for each task for every subject.
-                    For each dependent variable measured, a two-way mixed ANOVA was performed using R.
-                    The results showed that all three joint mobilisation tasks investigated can increase the risk of
-                    WMSDs for both female and male physical therapists.
+                    elective. I was supervised by Dr Yanxin Zhang from the Department of Exercise Science. I
+                    investigated whether performing joint mobilisation tasks such as shoulder, hip, and pelvic joint
+                    mobilisation increase the risk for work-related musculoskeletal disorders (WMSDs) in physical
+                    therapists using motion capture data collected from Fujian University of Traditional Chinese
+                    Medicine. Although I didn’t
+                    collect the data used in the project, prior to Covid-19 lockdown during the semester I learnt how to
+                    use the Azure Kinect system to capture motion data in the biomechanics lab. I carried out
+                    biomechanical and ergonomic analyses using an existing software to find RULA and REBA angles, low
+                    back compression forces, and strength capabilities in the joints at the most awkward posture for
+                    each task for every subject. For each dependent variable measured, a two-way mixed ANOVA was
+                    performed using R. The results showed that all three joint mobilisation tasks investigated can
+                    increase the risk of WMSDs for both female and male physical therapists.
+
                 </p>
             </div>
         </div>
@@ -97,21 +150,19 @@
             <div class="text" id="p7">
                 <p class="title">REPRESENTING A BIOLOGICAL SYSTEM</p>
                 <p class="details" id="7">
-                    This project was completed for BIOMENG 341, a third-year bioinstrumentation and design course.
-                    I worked with four other third-year biomedical engineering students to design and create a system
-                    that replicates the distension of the frog vocal sac.
-                    We modelled the system using a balloon inflated and deflated through a syringe and investigated the
-                    relationships between pressure, temperature, and volume, as well as the flow impedance and
-                    stress-strain relationships.
-                    Due to Covid-19 lockdown during the semester, the project was split into subsystems so the work
-                    could be more fairly divided between the group members.
-                    I contributed to the volume measurement by analysing a video recording of the balloon being inflated
-                    and deflated.
-                    The video was recorded by another group member who had set up the experiment and also recorded
-                    pressure and temperature data simultaneously.
-                    The analysis was done in LabVIEW and exported the measurements so all the data generated thus far
-                    could be used by other group members to analyse the flow impedance, stress, and strain.
-                    We were able to successfully measure everything required for the project.
+                    This project was completed for BIOMENG 341, a third-year bioinstrumentation and design course. I
+                    worked with four other third-year biomedical engineering students to design and create a system that
+                    replicates the distension of the frog vocal sac. We modelled the system using a balloon inflated and
+                    deflated through a syringe and investigated the relationships between pressure, temperature, and
+                    volume, as well as the flow impedance and stress-strain relationships. Due to Covid-19 lockdown
+                    during the semester, the project was split into subsystems so the work could be more fairly divided
+                    between the group members. I contributed to the volume measurement by analysing a video recording of
+                    the balloon being inflated and deflated. The video was recorded by another group member who had set
+                    up the experiment and also recorded pressure and temperature data simultaneously. The analysis was
+                    done in LabVIEW and exported the measurements so all the data generated thus far could be used by
+                    other group members to analyse the flow impedance, stress, and strain. We were able to successfully
+                    measure everything required for the project.
+
                 </p>
             </div>
         </div>
@@ -121,14 +172,16 @@
                 <p class="title">FRAMEWORK TO CAPTURE AND ANALYSE DEXTEROUS OBJECT MANIPULATION </p>
                 <p class="details" id="6">
                     This project was completed for a Summer Research Scholarship at the Auckland Bioengineering
-                    Institute (ABI).
-                    I was supervised by Professor Leo Cheng, Dr Nira Paskaranandavadivel, and Jaime Lara.
-                    I constructed two sets of standard manipulation objects capable of encasing a Shimmer3 wireless
-                    multi-sensor unit capable of streaming 9 degrees of freedom inertial sensing information.
-                    One set was constructed using Ecoflex 00-30 silicone and the other using 3D printed PLA plastic.
-                    I also extracted the Shimmer3 data to visualise the movement of the standard manipulation objects
-                    and was able to estimate object orientations in near real-time.
-                    Positions were unable to be estimated accurately due to bias drift.
+                    Institute over a period of 10 weeks. I was supervised by Prof. Leo Cheng, Dr Nira
+                    Paskaranandavadivel, and Jaime
+                    Lara. I used
+                    SOLIDWORKS to design a set of standard manipulation objects capable of encasing a Shimmer3 wireless
+                    multi-sensor unit capable of streaming 9 degrees of freedom inertial sensing information. Two sets
+                    were constructed, one using Ecoflex 00-30 silicone and the other using 3D printed PLA plastic. I
+                    also imported the Shimmer3 data into MATLAB to visualise the movement of the standard manipulation
+                    objects and was able to estimate object orientations in near real-time. Positions were unable to be
+                    estimated accurately due to bias drift.
+
                 </p>
             </div>
         </div>
@@ -140,12 +193,13 @@
             <div class="text" id="p5">
                 <p class="title">HANDHELD COLOUR METER: THE COLOURSTICK</p>
                 <p class="details" id="5">
-                    This project was completed for BIOMENG 241, a second-year bioinstrumentation and design course.
-                    I worked with three other second-year biomedical engineering students to design the case, circuitry,
-                    and software to build a handheld skin colour measurement device.
-                    The device operated by measuring the reflectances of red, green, and blue LEDs using a photodiode.
-                    I contributed to the design and testing of the circuitry and software, which involved design and
-                    programming on Altium Designer and LabVIEW, and testing with a breadboard and the assembled device.
+                    This project was completed for BIOMENG 241, a second-year bioinstrumentation and design course. I
+                    worked with three other second-year biomedical engineering students to design the case, circuitry,
+                    and software to build a handheld skin colour measurement device. The device operated by measuring
+                    the reflectances of red, green, and blue LEDs using a photodiode. I contributed to the design and
+                    testing of the circuitry and software, which involved design and programming on Altium Designer and
+                    LabVIEW, and testing with a breadboard and the assembled device.
+
                 </p>
             </div>
         </div>
@@ -155,12 +209,12 @@
                 <p class="title">OPERATION VACCINATION </p>
                 <p class="details" id="4">
                     This project was completed for ENGSCI 233, a second-year computational techniques and computer
-                    systems course.
-                    We were given the hypothetical scenario of delivering Covid-19 vaccines from the airport to all the
-                    rest homes in Auckland by four couriers travelling only using Auckland’s public transportation
-                    system.
-                    I developed an algorithm using Python that split the rest homes into four groups based on geographic
-                    location and used a network to return the shortest distance path and time taken for each group.
+                    systems course. We were given the hypothetical scenario of delivering Covid-19 vaccines from the
+                    airport to all the rest homes in Auckland by four couriers travelling only using Auckland’s public
+                    transportation system. I developed a Python algorithm that split the rest homes into four groups
+                    based on geographic location and used a network to return the shortest distance path and time taken
+                    for each group.
+
                     <br><br>
                     <a class="textlink" target="_blank"
                         href="https://github.com/aimeexlin/operation-vaccination">Project on GitHub</a>
@@ -176,10 +230,10 @@
                 <p class="title">THE WAREHOUSE</p>
                 <p class="details" id="3">
                     This project was completed for ENGGEN 131, a first-year engineering computation and software
-                    development course.
-                    I wrote C functions for a game that simulates workers moving boxes to targets around a warehouse.
-                    The configuration of the warehouse varied between the different levels (e.g. locations of workers,
-                    boxes, and targets).
+                    development course. I wrote C functions for a game that simulates workers moving boxes to targets
+                    around a warehouse. The configuration of the warehouse varied between the different levels (e.g.
+                    locations of workers, boxes, and targets).
+
                     <br><br>
                     <a class="textlink" target="_blank" href="https://github.com/aimeexlin/the-warehouse">Project on
                         GitHub</a>
@@ -192,14 +246,13 @@
                 <p class="title">COMBINING IMAGES</p>
                 <p class="details" id="2">
                     This project was completed for ENGGEN 131, a first-year engineering computation and software
-                    development course.
-                    I wrote MATLAB code that creates two different kinds of images from an arbitrary sequence of images
-                    that feature someone (or something) moving through a static scene.
-                    These images could be from a series of photos or a selection of frames taken from a movie.
-                    One kind of image was an action shot, a single image that features the moving person or object shown
-                    in different locations.
-                    The other kind of image was one where the action has been removed, eliminating the moving person (or
-                    object) from the image, leaving only the static scene visible.
+                    development course. I wrote MATLAB code that creates two different kinds of images from an arbitrary
+                    sequence of images that feature someone (or something) moving through a static scene. These images
+                    could be from a series of photos or a selection of frames taken from a movie. One kind of image was
+                    an action shot, a single image that features the moving person or object shown in different
+                    locations. The other kind of image was one where the action has been removed, eliminating the moving
+                    person (or object) from the image, leaving only the static scene visible.
+
                     <br><br>
                     <a class="textlink" target="_blank" href="https://github.com/aimeexlin/combining-images">Project on
                         GitHub</a>
@@ -215,18 +268,15 @@
                 <p class="title">MITIGATING POWER-LINE CAUSED FIRES WITH DATA ANALYSIS AND CITIZEN SCIENCE </p>
                 <p class="details" id="1">
                     This project was completed for the New York Academy of Sciences’ Junior Academy Wildfires: Tracking,
-                    Prevention, and Containment Challenge.
-                    I worked with five other high school students from India, Ukraine, and the US to design a solution
-                    to mitigate power-line caused fires.
-                    Our solution was a predictive analytics software that uses data from weather stations, government
-                    data on historical and ongoing fires fires,
-                    and citizen reports on fallen power lines and dry vegetation from an app to identify high-risk areas
-                    and suggest management plans for these areas for local governments and communities.
-                    I contributed to the background research by creating and sending out a survey to residents of
-                    California, and the design of the predictive analytics software user interface.
-                    We were finalists in the challenge and presented our project to 100+ attendees at the 2019 Global
-                    STEM Alliance Summit in New York City.
-                    We were also featured in the <a class="textlink" target="_blank_"
+                    Prevention, and Containment Challenge. I worked with five other high school students from India,
+                    Ukraine, and the US to design a solution to mitigate power-line caused fires. Our solution was a
+                    predictive analytics software that uses data from weather stations, government data on historical
+                    and ongoing fires fires, and citizen reports on fallen power lines and dry vegetation from an app to
+                    identify high-risk areas and suggest management plans for these areas for local governments and
+                    communities. I contributed to the background research by creating and sending out a survey to
+                    residents of California, and the design of the predictive analytics software interface. We were
+                    finalists in the challenge and our project was presented to 100+ attendees at the 2019 Global STEM
+                    Alliance Summit and featured in the <a class="textlink" target="_blank_"
                         href="https://blogs.scientificamerican.com/observations/who-you-gonna-call-the-firebusters/">Scientific
                         American</a>.
                     <br><br>
@@ -238,7 +288,7 @@
         </div>
     </div>
     <footer>
-        Made by Aimee Lin &copy; 2022
+        &copy; Aimee Lin, August 2022
     </footer>
 </body>
 

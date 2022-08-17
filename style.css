@@ -21,11 +21,15 @@ header {
     border-radius: 1vw;
     width: 100%;
 }
-#gif {
+#me:hover {
+    transform: scale(1.2)
+}
+#pic {
     width: 20vw;
     height: 20vw;
     margin-left: 3vw;
     margin-top: 2vw;
+    background-color: white;
 }
 #central {
     width: 50vw;
@@ -131,6 +135,7 @@ footer {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     transition: 0.2s;
+    backdrop-filter: brightness(75%);
 }
 .title {
     font-family: 'Josefin Sans', sans-serif;
