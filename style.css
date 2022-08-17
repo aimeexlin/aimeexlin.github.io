@@ -21,9 +21,6 @@ header {
     border-radius: 1vw;
     width: 100%;
 }
-#me:hover {
-    transform: scale(1.2)
-}
 #pic {
     width: 20vw;
     height: 20vw;
