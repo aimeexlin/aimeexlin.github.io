@@ -5,121 +5,223 @@ body {
     background-color: #181717;
     text-align: center;
     font-family: 'Helvetica', 'sans-serif';
-    font-size: 1.5vw;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    position: relative;
+    margin: 1vw;
+    height: 100vh;
+    overflow: hidden;
 }
-header {
+
+#left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1vw;
+    width: 20vw;
+    height: 100vh;
+}
+
+.vis {
+    border-radius: 1vw;
+    background-color: #363434;
+}
+
+#name {
+    width: 20vw;
+    font-size: 4vw;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 1vw;
+}
+
+#name:hover {
+    color: #363434;
+    background-color: white;
+    transition: 0.2s;
+}
+
+#icons {
+    width: 20vw;
     display: flex;
     flex-direction: row;
     position: relative;
     gap: 1vw;
 }
-.vis {
-    border-radius: 1vw;
-    background-color: #363434;
-}
+
 #me {
+    width: 15vw;
     border-radius: 1vw;
-    width: 100%;
 }
+
 #pic {
-    width: 20vw;
-    height: 20vw;
-    margin-left: 3vw;
-    margin-top: 2vw;
-    background-color: white;
+    background-color: #B6D7E4;
 }
-#central {
-    width: 50vw;
-    height: 20vw;
-    display: flex;
-    flex-direction: column;
-    margin-top: 2vw;
-    gap: 1vw;
-}
+
 #contact {
-    width: 20vw;
-    height: 20vw;
-    margin-right: 3vw;
-    margin-top: 2vw;
-    font-size: 4vw;
+    font-size: 2vw;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 0vw;
-    column-gap: 5vw;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-}
-#name, #description {
-    height: 9.5vw;
-    padding: 0vw 3vw;
-    display: flex;
-    justify-content: center;
     flex-direction: column;
+    gap: 1vw;
+    padding: 1vw;
+    background-color: #B6D7E4;
 }
-#name {
-    font-size: 5vw;
-    font-family: 'Josefin Sans', sans-serif;
-    padding-top: 1vw;
-    height: 8.5vw;
-}
+
 .logo {
-    width: 4vw;
+    width: 2vw;
     filter: brightness(0%);
 }
+
 .logo:hover {
     filter: brightness(100%);
     transition: 0.2s;
 }
+
 .fa-linkedin-in:hover {
     color: #2E64BD;
     transition: 0.2s;
 }
+
 .fa-github:hover {
     background: -webkit-linear-gradient(#6A2A82, #422771);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 0.2s;
 }
-a, a:visited {
+
+a,
+a:visited {
     color: #181717;
 }
+
+#description {
+    padding: 1vw;
+}
+
+.wave {
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+#copy {
+    padding: 1vw;
+}
+
+#copy2 {
+    display: none;
+}
+
+#main {
+    width: 75vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.section {
+    padding: 1vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vw;
+}
+
+#filter {
+    width: 75vw;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    justify-content: center;
+}
+
+#all {
+    background-color: #B6D7E4;
+    color: #181717
+}
+
+.tag {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1vw;
+    font-weight: bold;
+    background-color: #363434;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+}
+
 #container {
     display: flex;
-    margin: 1vw 2vw 0vw 2vw;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1vw;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    padding-bottom: 2vw;
 }
+
+#container::-webkit-scrollbar {
+    display: none;
+}
+
 .tile {
-    width: 30vw;
-    height: 57vh;
+    width: 24vw;
+    height: 22vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    scroll-snap-align: start;
 }
-.year {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 5vw;
-    padding-top: 1vw;
-    height: 56vh;
-}
-#name:hover, #description:hover, .year:hover {
-    color: #363434;
-    background-color: white;
-    transition: 0.2s;
-}
-footer {
-    padding: 1vw 0vw;
-}
+
 .click {
     background-size: cover;
     background-position: center;
 }
+
 .text {
     display: flex;
     width: 100%;
@@ -134,79 +236,133 @@ footer {
     transition: 0.2s;
     backdrop-filter: brightness(75%);
 }
+
 .title {
     font-family: 'Josefin Sans', sans-serif;
     margin: 0vw;
     width: 90%;
 }
+
 .details {
     display: none;
     width: 90%;
-    text-align: justify;
+    text-align: left;
     font-size: 1vw;
 }
-.textlink, .textlink:visited {
+
+.textlink,
+.textlink:visited {
     color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     body {
-        font-size: 5vw;
+        font-size: 4vw;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
+
     .vis {
         border-radius: 2vw;
     }
-    header {
-        flex-wrap: wrap;
+
+    .section {
+        font-size: 10vw;
     }
-    #gif {
-        order: 2;
-        margin: 1vw 0vw 0vw 0vw;
-        width: 70vw;
+
+    #left {
+        width: 96vw;
+        gap: 2vw;
     }
-    #central {
-        order: 1;
-        width: 100vw;
-        height: 50vw;
-        gap: 2vw; 
-    }
-    #name, #description {
-        height: 24vw;
-    }
+
     #name {
-        font-size: 10vw;
+        order: 1;
+        width: 96vw;
+        font-size: 15vw;
     }
-    #contact {
+
+    #about {
+        order: 2;
+    }
+
+    #icons {
         order: 3;
-        margin: 1vw 0vw 0vw 0vw;
-        width: 24vw;
-        height: 70vw;
-        flex-direction: column;
-        font-size: 10vw;
-        gap: 3vw;
+        width: 96vw;
     }
+
+    #pic {
+        width: 48vw;
+    }
+
+    #me {
+        width: 48vw;
+    }
+
+    #description {
+        order: 4;
+        padding: 5vw;
+    }
+
+    #copy {
+        display: none;
+    }
+
+    #copy2 {
+        order: 9;
+        display: block;
+        padding: 2vw;
+        margin-bottom: 5vw;
+        width: 92vw;
+    }
+
+    #contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 48;
+        font-size: 15vw;
+        gap: 5vw;
+        justify-content: center;
+        align-content: center;
+    }
+
     .logo {
-        width: 10vw;
+        width: 15vw;
     }
+
+    #main {
+        width: 96vw;
+    }
+    #projects {
+        order: 6;
+    }
+
+    #filter {
+        order: 7;
+        width: 96vw;
+    }
+
+    .tag {
+        font-size: 5vw;
+    }
+
     #container {
+        order: 8;
         flex-direction: column;
         gap: 2vw;
-        width: 95vw;
+        width: 96vw;
         margin: 2vw 0vw 0vw 0vw;
     }
+
     .tile {
-        width: 100%;
+        width: 96vw;
+        height: 48vw;
     }
-    .year {
-        height: 24vw;
-    }
+
     .details {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
-    footer {
-        padding: 2vw 0vw;
-        font-size: 3vw;
-    }
+
     .text {
         backdrop-filter: brightness(50%) blur(1px);
     }
