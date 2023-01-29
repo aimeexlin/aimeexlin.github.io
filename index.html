@@ -53,8 +53,6 @@
                 <img src="media/memoji.png" id="me">
             </div>
             <div id="contact" class="heading vis">
-                <a href="https://www.facebook.com/sparkarhub/portfolios/ig/aimeexlin/" target="_blank_"><img
-                        src="media/spark.png" class="logo"></a>
                 <a href="https://github.com/aimeexlin" target="_blank_"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/aimeexlin" target="_blank_"><i class="fab fa-linkedin-in"></i></a>
                 <a href="mailto:alin404@aucklanduni.ac.nz" target="_blank_"><img src="media/email.png" class="logo"></a>
@@ -65,12 +63,12 @@
         </div>
         <div id="description" class="vis">
             Hey there <span class="wave">👋🏼</span>
-            <p>I'm a final year biomedical engineering student at The University of
-                Auckland.
             <p>Welcome to my portfolio, featuring university projects and more.
+            <p>I'm a product development engineer trained in biomedical engineering.
+            <p>All images generated using <br><a class="textlink" target="_blank" href="https://stablediffusionweb.com/#demo">Stable Diffusion</a>.
         </div>
         <div id="copy" class="vis">
-            &copy; Aimee Lin, October 2022
+            &copy; Aimee Lin, January 2023
         </div>
     </div>
     <div id="main">
@@ -79,26 +77,25 @@
         </div>
         <div id="filter">
             <span id="all" class="tag" onclick="showAll()">ALL</span>
-            <span id="2022" class="tag" onclick="filterBy('2022')">2022</span>
-            <span id="2021" class="tag" onclick="filterBy('2021')">2021</span>
-            <span id="2020" class="tag" onclick="filterBy('2020')">2020</span>
-            <span id="2019" class="tag" onclick="filterBy('2019')">2019</span>
-            <span id="2018" class="tag" onclick="filterBy('2018')">2018</span>
+            <span id="aiml" class="tag" onclick="filterBy('aiml')">AI/ML</span>
+            <span id="ar" class="tag" onclick="filterBy('ar')">AR</span>
+            <span id="bioins" class="tag" onclick="filterBy('bioins')">BIOINSTRUMENTATION</span>
+            <span id="biomech" class="tag" onclick="filterBy('biomech')">BIOMECHANICS</span>
         </div>
         <div id="container">
-            <div id="t11" class="tile click vis 2022" onclick="showDetails('11')" onmouseover="showDetails('11')"
-                onmouseout="hideDetails('11')" style="background-image: url(media/11.png)">
-                <div class="text" id="p11">
+            <div id="t1" class="tile click vis biomech" onclick="showDetails('1')" onmouseover="showDetails('1')"
+                onmouseout="hideDetails('1')" style="background-image: url(media/1.jpeg)">
+                <div class="text" id="p1">
                     <p class="title">TECHNOLOGY TO ADVANCE TREATMENT OF CHILDREN WITH MOVEMENT DISORDERS
                     </p>
-                    <p class="details" id="11">
+                    <p class="details" id="1">
                         This paired project was completed for my Honours degree. I created scaled and subject-specific
                         models of
                         the lower limb of a typically developed child and child with cerebral palsy to compare the
                         estimated structure and function
                         of the models using Python and OpenSim. I found that the differences in structure lead to
                         differences in the estimated joint kinematics and muscle forces,
-                        highlighting the importance of having accurate geometries in musculoskeletal models.
+                        highlighting the importance of using accurate geometries in musculoskeletal models.
                         The methods established can also be used to investigate relationships
                         between the accuracy of modelling methods and the severity of a child's
                         cerebral palsy.
@@ -106,215 +103,107 @@
                     </p>
                 </div>
             </div>
-            <div id="t10" class="tile click vis 2022" onclick="showDetails('10')" onmouseover="showDetails('10')"
-                onmouseout="hideDetails('10')" style="background-image: url(media/10.png)">
-                <div class="text" id="p10">
+            <div id="t2" class="tile click vis aiml" onclick="showDetails('2')" onmouseover="showDetails('2')"
+                onmouseout="hideDetails('2')" style="background-image: url(media/2.jpeg)">
+                <div class="text" id="p2">
                     <p class="title">HUMAN ACTIVITY RECOGNITION
                     </p>
-                    <p class="details" id="10">
+                    <p class="details" id="2">
                         This project was completed for a signal processing course taken as an elective. I recorded
                         linear
-                        acceleration data from my phone while walking and running and used tsfresh and scikit-learn in
-                        Python to extract relevant features to create a time-series classification model.
+                        accelerations from my phone during walking and running and used the Python libraries tsfresh and scikit-learn to extract relevant features to create a time-series classification model.
                     </p>
                 </div>
             </div>
-            <div id="t9" class="tile click vis 2022" onclick="showDetails('9')" onmouseover="showDetails('9')"
-                onmouseout="hideDetails('9')" style="background-image: url(media/9.png)">
-                <div class="text" id="p9">
-                    <p class="title">JUICY MOUTH: A SOLUTION FOR XEROSTOMIA
-                    </p>
-                    <p class="details" id="9">
-                        This project was completed with four other students for a medical device design course. We
-                        designed a device that sustains saliva substitute delivery to treat xerostomia (dry mouth),
-                        a common side effect of head and neck cancer. The
-                        device was a capsule containing medication attached to the user’s teeth with brackets inspired
-                        by
-                        orthodontic clasps. I contributed to the research of medications and delivery mechanisms, CAD
-                        of the capsule and its packaging on Autodesk Fusion 360, planning a suite of design verification
-                        tests, performing a computational stress analysis of the capsule, and report writing.
-
-                    </p>
-                </div>
-            </div>
-            <div id="t8" class="tile click vis 2021" onclick="showDetails('8')" onmouseover="showDetails('8')"
-                onmouseout="hideDetails('8')" style="background-image: url(media/8.png)">
-                <div class="text" id="p8">
+            <div id="t3" class="tile click vis biomech" onclick="showDetails('3')" onmouseover="showDetails('3')"
+                onmouseout="hideDetails('3')" style="background-image: url(media/3.jpeg)">
+                <div class="text" id="p3">
                     <p class="title">BIOMECHANICAL AND ERGONOMIC ANALYSIS OF JOINT MOBILISATION TASKS IN PHYSICAL
                         THERAPY
                     </p>
-                    <p class="details" id="8">
+                    <p class="details" id="3">
                         This project was a practicum project in exercise science, taken as an
                         elective. I investigated whether performing joint mobilisation tasks increased the risk of
                         work-related musculoskeletal disorders (WMSDs) for physiotherapists.
-                        Analyses were carried out on motion capture data using existing software to find RULA and REBA
+                        I analysed motion capture data using existing software to find RULA and REBA
                         scores, low
                         back compression forces, and joint strength capabilities at the most awkward posture for
-                        each task and subject. Two-way mixed ANOVA was
-                        performed using R for each dependent variable. All three tasks investigated can
-                        increase the risk of WMSDs for physiotherapists.
+                        each task and subject. I then used R to perform two-way mixed ANOVA for each dependent variable. All three tasks investigated can
+                        increase the risk of WMSDs for male and female physiotherapists.
 
                     </p>
                 </div>
             </div>
-            <div id="t7" class="tile click vis 2021" onclick="showDetails('7')" onmouseover="showDetails('7')"
-                onmouseout="hideDetails('7')" style="background-image: url(media/7.png)">
-                <div class="text" id="p7">
+            <div id="t4" class="tile click vis bioins" onclick="showDetails('4')" onmouseover="showDetails('4')"
+                onmouseout="hideDetails('4')" style="background-image: url(media/4.jpeg)">
+                <div class="text" id="p4">
                     <p class="title">REPRESENTING A BIOLOGICAL SYSTEM</p>
-                    <p class="details" id="7">
-                        This project was completed with four other students for a bioinstrumentation course. We created
+                    <p class="details" id="4">
+                        This project was completed in a group of five students. We created
                         a system that
-                        replicates the distension of the frog vocal sac. We modelled the system using a balloon and
+                        replicates the distension of a frog vocal sac. We modelled the system using a balloon and
                         investigated the relationships between pressure, temperature,
                         volume, flow impedance and stress-strain as it was inflated and deflated. I analysed the volume
-                        of the balloon in LabVIEw using a video recording of
-                        it being inflated and deflated. The video was recorded by another group member who had set
-                        up the experiment and recorded the pressure and temperature data simultaneously.
+                        of the balloon in LabVIEW using a video recorded by another group member who had set
+                        up the experiment and also recorded pressure and temperature data simultaneously.
 
                     </p>
                 </div>
             </div>
-            <div id="t6" class="tile click vis 2021" onclick="showDetails('6')" onmouseover="showDetails('6')"
-                onmouseout="hideDetails('6')" style="background-image: url(media/6.png)">
-                <div class="text" id="p6">
+            <div id="t5" class="tile click vis bioins" onclick="showDetails('5')" onmouseover="showDetails('5')"
+                onmouseout="hideDetails('5')" style="background-image: url(media/5.jpeg)">
+                <div class="text" id="p5">
                     <p class="title">FRAMEWORK TO CAPTURE AND ANALYSE DEXTEROUS OBJECT MANIPULATION </p>
-                    <p class="details" id="6">
+                    <p class="details" id="5">
                         This project was completed for a Summer Research Scholarship at the Auckland Bioengineering
                         Institute over a period of 10 weeks. I used
                         SOLIDWORKS to design a set of standard manipulation objects capable of encasing a Shimmer3
                         wireless
-                        multi-sensor unit. Two sets
-                        were constructed, one using Ecoflex 00-30 silicone and the other using 3D printed PLA plastic. I
-                        also imported the Shimmer3 data into MATLAB to visualise the movement of the standard
+                        multi-sensor unit and constructed two sets, one using Ecoflex 00-30 silicone and the other using 3D printed PLA plastic. I
+                        imported the Shimmer3 data into MATLAB to visualise the movement of the standard
                         manipulation
                         objects and was able to estimate object orientations in near real-time.
 
                     </p>
                 </div>
             </div>
-            <div id="t12" class="tile click vis 2020" onclick="showDetails('12')" onmouseover="showDetails('12')"
-                onmouseout="hideDetails('12')" style="background-image: url(media/12.png)">
-                <div class="text" id="p12">
+            <div id="t6" class="tile click vis ar" onclick="showDetails('6')" onmouseover="showDetails('6')"
+                onmouseout="hideDetails('6')" style="background-image: url(media/6.jpeg)">
+                <div class="text" id="p6">
                     <p class="title">GUESS THE SONG</p>
-                    <p class="details" id="12">
+                    <p class="details" id="6">
                         This project was completed with Red Pocket Magazine (RPM), a literary magazine for youth of the
                         Asian diaspora, to
-                        promote their second volume ”Lost in Translation”. I used Meta’s Spark AR Studio to create an
+                        promote their second volume ”Lost in Translation”. I used Meta Spark Studio to create an
                         Instagram filter game
                         from graphics made by RPM’s design team. The filter currently has over 2 million opens on
                         Instagram.
                         <br><br>
                         <a class="textlink" target="_blank"
-                            href="https://www.facebook.com/sparkarhub/effect/view/305119360465312/">Filter on Spark
-                            AR</a>
+                            href="https://www.instagram.com/ar/305119360465312/">Filter on Instagram</a>
                     </p>
                 </div>
             </div>
-            <div id="t5" class="tile click vis 2020" onclick="showDetails('5')" onmouseover="showDetails('5')"
-                onmouseout="hideDetails('5')" style="background-image: url(media/5.png)">
-                <div class="text" id="p5">
+            <div id="t7" class="tile click vis bioins" onclick="showDetails('7')" onmouseover="showDetails('7')"
+                onmouseout="hideDetails('7')" style="background-image: url(media/7.jpeg)">
+                <div class="text" id="p7">
                     <p class="title">HANDHELD COLOUR METER: THE COLOURSTICK</p>
-                    <p class="details" id="5">
-                        This project was completed with three other students for a bioinstrumentation course. We
+                    <p class="details" id="7">
+                        This project was completed in a group of four students. We
                         designed the case, circuitry,
-                        and software to build a handheld skin colour measurement device. The device operated by
+                        and software to build a handheld colour measurement device. The device operated by
                         measuring
                         the reflectances of red, green, and blue LEDs using a photodiode. I contributed to the design
-                        and
-                        testing of the circuitry and software, which involved design and programming on Altium Designer
-                        and
+                        of the circuitry and software using Altium Designer and 
                         LabVIEW, and testing with a breadboard and the assembled device.
 
                     </p>
                 </div>
             </div>
-            <div id="t4" class="tile click vis 2020" onclick="showDetails('4')" onmouseover="showDetails('4')"
-                onmouseout="hideDetails('4')" style="background-image: url(media/4.png)">
-                <div class="text" id="p4">
-                    <p class="title">OPERATION VACCINATION </p>
-                    <p class="details" id="4">
-                        This project was completed for a computational techniques and computer
-                        systems course. We were given the hypothetical scenario of delivering Covid-19 vaccines from the
-                        airport to all the rest homes in Auckland by four couriers travelling only using Auckland’s
-                        public
-                        transportation system. I developed a Python algorithm that split the rest homes into four groups
-                        based on geographic location and used a network to return the shortest distance path and time
-                        taken
-                        for each group.
-
-                        <br><br>
-                        <a class="textlink" target="_blank"
-                            href="https://github.com/aimeexlin/operation-vaccination">Project on GitHub</a>
-                    </p>
-                </div>
-            </div>
-            <div id="t3" class="tile click vis 2019" onclick="showDetails('3')" onmouseover="showDetails('3')"
-                onmouseout="hideDetails('3')" style="background-image: url(media/3.png)">
-                <div class="text" id="p3">
-                    <p class="title">THE WAREHOUSE</p>
-                    <p class="details" id="3">
-                        This project was completed an engineering computation and software
-                        development course. I wrote C functions for a game that simulates workers moving boxes to
-                        targets
-                        around a warehouse. The configuration of the warehouse varied between the different levels (e.g.
-                        locations of workers, boxes, and targets).
-
-                        <br><br>
-                        <a class="textlink" target="_blank" href="https://github.com/aimeexlin/the-warehouse">Project on
-                            GitHub</a>
-                    </p>
-                </div>
-            </div>
-            <div id="t2" class="tile click vis 2019" onclick="showDetails('2')" onmouseover="showDetails('2')"
-                onmouseout="hideDetails('2')" style="background-image: url(media/2.png)">
-                <div class="text" id="p2">
-                    <p class="title">COMBINING IMAGES</p>
-                    <p class="details" id="2">
-                        This project was completed for an engineering computation and software
-                        development course. I wrote MATLAB code that creates two different kinds of images from an
-                        arbitrary
-                        sequence of images that feature someone (or something) moving through a static scene. These
-                        images
-                        could be from a series of photos or a selection of frames taken from a movie. One kind of image
-                        was
-                        an action shot, a single image that features the moving person or object shown in different
-                        locations. The other kind of image was one where the action has been removed, eliminating the
-                        moving
-                        person (or object) from the image, leaving only the static scene visible.
-
-                        <br><br>
-                        <a class="textlink" target="_blank" href="https://github.com/aimeexlin/combining-images">Project
-                            on
-                            GitHub</a>
-                    </p>
-                </div>
-            </div>
-            <div id="t1" class="tile click vis 2018" onclick="showDetails('1')" onmouseover="showDetails('1')"
-                onmouseout="hideDetails('1')" style="background-image: url(media/1.png)">
-                <div class="text" id="p1">
-                    <p class="title">MITIGATING POWER-LINE CAUSED FIRES WITH DATA ANALYSIS AND CITIZEN SCIENCE </p>
-                    <p class="details" id="1">
-                        This project was completed with five other high school students for the New York Academy of
-                        Sciences’ Wildfires Challenge. We designed a
-                        predictive analytics software that uses weather stations data, historical
-                        and ongoing fires data, and citizen reports on fallen power lines and dry vegetation to
-                        identify and manage high-risk areas. I contributed to the background research by surverying
-                        residents of California and the design of the user interface. We were
-                        challenge finalists, presented our project at the 2019 Global STEM
-                        Alliance Summit and were featured in the <a class="textlink" target="_blank_"
-                            href="https://blogs.scientificamerican.com/observations/who-you-gonna-call-the-firebusters/">Scientific
-                            American</a>.
-                        <br><br>
-                        <a class="textlink" target="_blank_"
-                            href="https://joinlaunchpad.com/#/projects/828/wildfires-tracking-prevention-and-containment">Project
-                            on Launchpad</a>
-                    </p>
-                </div>
-            </div>
         </div>
-        <div id="copy2" class="vis">
-            &copy; Aimee Lin, October 2022
-        </div>
+    </div>
+    <div id="copy2" class="vis">
+        &copy; Aimee Lin, January 2023
     </div>
 </body>
 
